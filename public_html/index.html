@@ -1,27 +1,233 @@
 <!DOCTYPE html>
 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div>ARBRE GENEALOGIQUE</div>
-        <ul>
-                <li id="name"></li>
-                <li id="firstname"></li>
-                <li id="age"></li>
-                <li id="kind"></li>
-                <li id="profession"></li>
-                <img id="photo" style="width:30%; float:right"></img>
-               
-            </ul>
+<!DOCTYPE html>
+    <html lang="fr">
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="css/bootstrap.min.css" />
+            <link rel="stylesheet" href="css/stylesheet.css" />
             
-            <script src="../js/person.js"></script>
-            <script src="../js/objet.js"></script>
-            
-    </body>
-</html>
+            <script src="js/jquery.js"></script>
+            <title>Mon arbre généalogique </title>
+        </head>
+        <body>
+            <div class="container-fluid">
+                <div class="row">
+                	<div class="col-md-12">
+                
+                		<header>
+                			<div class="row">
+                				<div class="col-md-12">
+                					   <div>ARBRE GENEALOGIQUE POUR MARIE</div>
+                				</div>
+                			</div>
+                		</header>
+               <div class="row">
+                   <div class="col-md-12">
+                       <div class="col-md-6">
+                           <div class="col-md-6"></br><!--grand-parents paternel-->
+                    	    <ul>
+                                <img id="photo" src="images/icone_boy.jpg" style="width:20%; float:center"></img>
+                                <li id="name">Defay</li>
+                                <li id="firstname">Roger</li>
+                                <li id="age">85</li>
+                                <li id="profession">Retraité</li>
+                            </ul>
+                            </div>
+                            <div class="col-md-6"></br>
+                            <ul>
+                                <img id="photo" src="images/icone_girl.jpg" style="width:20%; float:center"></img>
+                                <li id="name">Defay</li>
+                                <li id="firstname">Philomène</li>
+                                <li id="age">84</li>
+                                <li id="profession">Retraitée</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                           <div class="col-md-6"></br><!--grand-parents maternel-->
+                    	    <ul>
+                                <img id="photo" src="images/icone_boy.jpg" style="width:20%; float:center"></img>
+                                <li id="name">Subileau</li>
+                                <li id="firstname">Robert</li>
+                                <li id="age">83</li>
+                                <li id="profession">Retraité</li>
+                            </ul>
+                            </div>
+                            <div class="col-md-6"></br>
+                            <ul>
+                                <img id="photo" src="images/icone_girl.jpg" style="width:20%; float:center"></img>
+                                <li id="name">Subileau</li>
+                                <li id="firstname">Yolande</li>
+                                <li id="age">82</li>
+                                <li id="profession">Retraitée</li>
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-offset-3 col-md-6"></br>
+                        <div class="col-md-6"></br><!--parents-->
+                	    <ul>
+                            <img id="photo" src="images/icone_boy.jpg" style="width:20%; float:center"></img>
+                            <li id="name">Defay</li>
+                            <li id="firstname">Jean-Pierre</li>
+                            <li id="age">66</li>
+                            <li id="profession">Retraité</li>
+                        </ul>
+                        </div>
+                        <div class="col-md-6"></br>
+                        <ul>
+                            <img id="photo" src="images/icone_girl.jpg" style="width:20%; float:center"></img>
+                            <li id="name">Subileau</li>
+                            <li id="firstname">Thérèse</li>
+                            <li id="age">59</li>
+                            <li id="profession">Auxilliaire de vie</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3"></br><!--enfant 1-->
+                            <div class="col-md-12">
+                                <div class="col-md-6">
+                                	<ul>
+                                        <img id="photo" src="images/icone_girl.jpg" style="width:60%; float:center"></img>
+                                        <li id="name">Defay</li>
+                                        <li id="firstname">Sophie</li>
+                                        <li id="age">42</li>
+                                        <li id="profession">Développeur</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <img id="photo" src="images/icone_boy.jpg" style="width:60%; float:center"></img>
+                                        <li id="name">Lemaire</li>
+                                        <li id="firstname">Patrick</li>
+                                        <li id="age">52</li>
+                                        <li id="profession">Plombier</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-md-3"></br><!--enfant 2-->
+                            <div class="col-md-12">
+                                <div class="col-md-6">
+                                	<ul>
+                                        <img id="photo" src="images/icone_girl.jpg" style="width:60%; float:center"></img>
+                                        <li id="name">Defay</li>
+                                        <li id="firstname">Ludivine</li>
+                                        <li id="age">35</li>
+                                        <li id="profession">Caissière</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <img id="photo" src="images/icone_boy.jpg" style="width:60%; float:center"></img>
+                                        <li id="name">Kowarzik</li>
+                                        <li id="firstname">Léon</li>
+                                        <li id="age">48</li>
+                                        <li id="profession">Pizzaiolo</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-md-3"></br><!--enfant 3-->
+                        	<div class="col-md-12">
+                                <div class="col-md-6">
+                                	<ul>
+                                        <img id="photo" src="images/icone_boy.jpg" style="width:60%; float:center"></img>
+                                        <li id="name">Defay</li>
+                                        <li id="firstname">Michaël</li>
+                                        <li id="age">41</li>
+                                        <li id="profession">Agent de sécurité</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <ul>
+                                        <img id="photo" src="images/icone_girl.jpg" style="width:60%; float:center"></img>
+                                        <li id="name">Desmaison</li>
+                                        <li id="firstname">Carine</li>
+                                        <li id="age">40</li>
+                                        <li id="profession">Aide ménagère</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="col-md-3"></br><!--enfant 4-->
+                            <div class="col-md-12">
+                                <div class="col-md-6">
+                                	<ul>
+                                        <img id="photo" src="images/icone_boy.jpg" style="width:60%; float:center"></img>
+                                        <li id="name">Defay</li>
+                                        <li id="firstname">David</li>
+                                        <li id="age">40</li>
+                                        <li id="profession">Cuisinier</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="col-md-3"></br><!--petits enfants 1-->
+                            <div class="col-md-12">
+                                <div class="col-md-4">
+                                    <ul>
+                                        <img id="photo" src="images/icone_boy.jpg" style="width:140%; float:center"></img>
+                                        <li id="name">Lemaire</li>
+                                        <li id="firstname">Florian</li>
+                                        <li id="age">17</li>
+                                        <li id="profession">Etudiant</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <img id="photo" src="images/icone_girl.jpg" style="width:140%; float:center"></img>
+                                        <li id="name">Lemaire</li>
+                                        <li id="firstname">Amélie</li>
+                                        <li id="age">15</li>
+                                        <li id="profession">Etudiante</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-4">
+                                    <ul>
+                                        <img id="photo" src="images/icone_boy.jpg" style="width:140%; float:center"></img>
+                                        <li id="name">Lemaire</li>
+                                        <li id="firstname">Julien</li>
+                                        <li id="age">14</li>
+                                        <li id="profession">Etudiant</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3"></br><!--petits enfants 1-->
+                            <div class="col-md-12">
+                                <div class="col-md-4">
+                                    <ul>
+                                        <img id="photo" src="images/icone_girl.jpg" style="width:140%; float:center"></img>
+                                        <li id="name">Kowarzik</li>
+                                        <li id="firstname">Cindy</li>
+                                        <li id="age">23</li>
+                                        <li id="profession">Caissière</li>
+                                    </ul>
+                                </div>
+                            </div>    
+                    </div>
+                </div>
+                    
+            </div>    
+           
+            <script src="js/bootstrap.min.js"></script>
+            <script src="js/person.js"></script>
+            <script src="js/objet.js"></script>
+        </body>
+    </html>
 
 
 

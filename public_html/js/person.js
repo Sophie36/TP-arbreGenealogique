@@ -1,12 +1,17 @@
 "use strict";
 
-function Person(name,firstname,age,kind,profession,brothers,mothers,sisters){
+function Person(name,firstname,age,kind,profession,brothers,mothers,sisters,profilpicture){
    
     this.name = undefined;
     this.firstname = firstname;
     this.age = age;
     this.kind = kind;
     this.profession = profession;
+    this.mother = mother;
+    this.father = father;
+    this.brothers = brothers;
+    this.sisters = sisters;
+    this.profilpicture = profilpicture;
     var brothersArray = [];
     if (brothers != undefined) {
         if (brothers instanceof Person){
@@ -35,14 +40,7 @@ function Person(name,firstname,age,kind,profession,brothers,mothers,sisters){
         }
     this.subProduct = [];
 }
-
-
-
-
-    
-
-
- function initialiseProductFiche(param) {
+function initialiseProductFiche(param) {
     debugger;
     Object.keys(param).forEach(function (key) {
         debugger;
