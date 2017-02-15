@@ -23,5 +23,5 @@ function Person(name, firstname, age, kind, profession, mother, father, brothers
     var brother = new Person("Defay","Michaël",41,"M","Agent de sécurité","Inconnu","Inconnu","NULL","NULL","icone_boy.jpg");
     var wife = new Person("Desmaison","Carine",40,"F","Aide ménagère","Inconnu","Inconnu","NULL","NULL","icone_girl.jpg");//la femme de brother
     var brother1 = new Person("Defay","David",40,"F","Cuisinier","Inconnu","Inconnu","NULL","NULL","icone_boy.jpg");
-    
+}
       initialiseProductFiche(person);

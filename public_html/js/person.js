@@ -115,3 +115,4 @@ function getValueAfterTest (value) {
             this.father = new Person(name, age, kind, profession, profilpicture);
         }
     }
+}
