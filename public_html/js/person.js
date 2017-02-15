@@ -58,11 +58,60 @@ function initialiseProductFiche(param) {
 //a regarder à la maison pour vérifié la valeur de name, age, etc...    
 function getValueAfterTest (value) {
     debugger;
-        if (value == undefined || value == null || value == ""){
+        //if (value == undefined || value == null || value == ""){
             value = undefined;//Pas de valeur
+       // }
+        //else{
+           // value = value;
+       // }
+       // return value;
+   // } MODELE
+   if (name == undefined  || name == "" || name == null) {
+        this.name = undefined;
+    }
+    else{
+        this.name = name;
+    }
+    if (firstname == undefined  || firstname == "" || firstname == null) {
+        this.firstname = prompt("Veuillez noter le prenom de la personne");
+    }
+    else{
+        this.firstname = firstname;
+    }
+    if (age == undefined  || age == "" || age == null) {
+        this.age = undefined;
+    }
+    else if(isNaN(age)){
+        this.age=prompt("Notez l'age de la personne");
+    }
+    else {
+        this.age=age;
+    }
+    if (kind == "m" || kind == "M" || kind == "f" || kind=="F") {
+        this.kind = kind;
+    } 
+    else {
+        this.kind=kind;
+    }
+    if (profession == undefined  || profession == "" || profession == null) {
+        this.profession = undefined;
+    }
+    else {
+        this.profession = profession;
+    }
+    if (mother == undefined  || mother == "" || mother == null) {
+        this.mother = undefined;
+    }
+    else {
+        this.addmother = function(name, age, kind, profession, profilpicture){
+            this.mother = new Person(name, age, kind, profession, profilpicture);
         }
-        else{
-            value = value;
+    }
+    if (father == undefined  || father == "" || father == null) {
+        this.father = undefined;
+    }
+    else {
+        this.addfather = function(name, age, kind, profession, profilpicture){
+            this.father = new Person(name, age, kind, profession, profilpicture);
         }
-        return value;
     }
