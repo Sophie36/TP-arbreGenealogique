@@ -5,3 +5,13 @@ header{
     padding-right:auto;
     text-align: center;
 }
+
+.barre {
+position:absolute;
+margin-top:408px;
+width:700px;
+margin-left:30px;
+height:2px;
+font-size:0;
+background: #000000;
+}
